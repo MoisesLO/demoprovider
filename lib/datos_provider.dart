@@ -6,5 +6,6 @@ class StateProvider with ChangeNotifier {
 
   void addNewData(String nombre, String apellido) {
     items.add(Todo(nombre, apellido));
+    notifyListeners();
   }
 }
